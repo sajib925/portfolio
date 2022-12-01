@@ -3,6 +3,7 @@ import Container from '../../components/Container/Container';
 import StyledDesignSection from './StyledDesignSection';
 import Title from './../../components/Title/Title';
 import Paragraph from '../../components/Paragraph/Paragraph';
+import { AWARDS, CSSDA, FWA } from '../../Data/Awards';
 
 const DesignSection = () => {
   return (
@@ -24,37 +25,33 @@ const DesignSection = () => {
               AWWWARDS (5)
             </Title>
             <div className="bottom__date">
-              <Paragraph className="bottom__description">
-                Lobar/ Winner of the day / 5 January 2022
-              </Paragraph>
-              <Paragraph className="bottom__description">
-                FWA of the day / January 2022
-              </Paragraph>
-              <Paragraph className="bottom__description">
-                FWA of the day / January 2022
-              </Paragraph>
-              <Paragraph className="bottom__description">
-                FWA of the day / January 2022
-              </Paragraph>
-              <Paragraph className="bottom__description">
-                FWA of the day / January 2022
-              </Paragraph>
+              {
+                AWARDS.map(({id, text}) => {
+                  return (
+                    <Paragraph className="bottom__description" key={id}>
+                      {text}
+                    </Paragraph>
+                  );
+                })
+              }
             </div>
           </div>
           <div className="bottom__col">
+
             <Title tagName="h3" className="bottom__title">
               FWA (3)
             </Title>
+
             <div className="bottom__date">
-              <Paragraph className="bottom__description">
-                FWA of the day / January 2022
-              </Paragraph>
-              <Paragraph className="bottom__description">
-                FWA of the day / January 2022
-              </Paragraph>
-              <Paragraph className="bottom__description">
-                FWA of the day / January 2022
-              </Paragraph>
+              {
+                FWA.map(({id, text}) => {
+                  return (
+                    <Paragraph className="bottom__description" key={id}>
+                      {text}
+                    </Paragraph>
+                  );
+                })
+              }
             </div>
           </div>
           <div className="bottom__col">
@@ -62,18 +59,15 @@ const DesignSection = () => {
               CSSDA (4)
             </Title>
             <div className="bottom__date">
-              <Paragraph className="bottom__description">
-                Lobar/ Winner of the day / 5 January 2022
-              </Paragraph>
-              <Paragraph className="bottom__description">
-                FWA of the day / January 2022
-              </Paragraph>
-              <Paragraph className="bottom__description">
-                FWA of the day / January 2022
-              </Paragraph>
-              <Paragraph className="bottom__description">
-                FWA of the day / January 2022
-              </Paragraph>
+             {
+              CSSDA.map(({id, text}) => {
+                return (
+                  <Paragraph className="bottom__description" key={id}>
+                    {text}
+                  </Paragraph>
+                );
+              })
+             }
             </div>
           </div>
         </div>

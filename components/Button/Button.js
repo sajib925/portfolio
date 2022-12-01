@@ -15,6 +15,13 @@ const StyledPrimaryBtn = styled.button`
   outline: none;
   padding: 15px 35px;
   border: none;
+  border: 1px solid ${THEME.colors.textPrimary};
+  transition: all ease-in-out 0.15s;
+  cursor: pointer;
+  &:hover {
+    color: ${THEME.colors.textPrimary};
+    background-color: transparent;
+  }
 `;
 const StyledOutlineBtn = styled.a`
   border: 1px solid ${THEME.colors.textPrimary};
@@ -28,6 +35,12 @@ const StyledOutlineBtn = styled.a`
   color: ${THEME.colors.textPrimary};
   padding: 12px 25px;
   display: inline-block;
+  transition: all ease-in-out 0.15s;
+  cursor: pointer;
+  &:hover {
+    color: ${THEME.colors.whiteColor};
+    background-color: ${THEME.colors.textPrimary};
+  }
 `;
 
 function Button({variant,className, text, path}) {
