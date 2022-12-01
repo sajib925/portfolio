@@ -48,7 +48,7 @@ function Footer() {
             />
 
             <Button
-              path="/"
+              path="https://www.facebook.com/profile.php?id=100008890392675"
               text="Facebook"
               variant="outline"
               className="footer__bottom__buttons__btn"
@@ -101,7 +101,7 @@ function Footer() {
         {/* footer bottom end here  */}
 
         {/* copyright start here */}
-        
+
         <div className="copyright">
           <Paragraph className="copyright__text">
             Copyright © 2022 UIHUT all rights reserved.
@@ -109,7 +109,6 @@ function Footer() {
         </div>
 
         {/* copyright end here */}
-
       </Container>
     </StyledFooter>
   );
