@@ -1,45 +1,54 @@
-import React from "react";
-import StyledHeader from "./StyledHeader";
-import Container from "./../Container/Container";
-import Row from "./../Row/Row";
-import LogoSvg from "./../SVG/LogoSvg";
-import RightArrowSvg from './../SVG/RightArrowSvg';
-import DesktopMenu from './../SVG/DesktopMenu';
-import MobileMenu from './../SVG/MobileMenu';
+import React from 'react'
+import StyledHeader from './StyledHeader';
+import Container from './../Container/Container';
+import Link from 'next/link';
+import  Image  from 'next/image';
+import logo from "../../images/header/Eion Morgan.svg"
+import arrowIcon from "../../images/header/Arrows.svg";
+import desktopIcon from "../../images/header/Group 17705.svg";
+import mobileIcon from "../../images/header/Menu.svg";
 
-function Header () {
+const Header = () => {
   return (
     <StyledHeader>
       <Container>
-        <Row>
+        <div className="header__content">
           <div className="logo">
-            <a href="/">
-              <LogoSvg />
-            </a>
+            <Link href="/">
+              <Image src={logo} alt="logo" />
+            </Link>
           </div>
           <ul className="menu">
             <li className="menu__item">
               <a href="/" className="menu__item__link">
-                <RightArrowSvg />
-                START A PROJECT
+                <Image
+                  src={arrowIcon}
+                  alt="arrow icon"
+                  className="menu__item__link__icon"
+                />
+                <span className="menu__item__link__text">START A PROJECT</span>
               </a>
             </li>
             <li className="menu__item">
               <a href="/" className="menu__item__link">
-                <DesktopMenu />
-                MENU
+                <Image
+                  src={desktopIcon}
+                  alt="desktop icon"
+                  className="menu__item__link__icon"
+                />
+                <span className="menu__item__link__text">MENU</span>
               </a>
             </li>
-            <li className="menu__item__mobile">
-              <a href="/" className="menu__item__mobile__link">
-                <MobileMenu />
+            <li className="menu__mobile__item">
+              <a href="/" className="menu__mobile__item__link">
+                <Image src={mobileIcon} alt="mobile icon" />
               </a>
             </li>
           </ul>
-        </Row>
+        </div>
       </Container>
     </StyledHeader>
   );
 }
 
-export default Header;
+export default Header

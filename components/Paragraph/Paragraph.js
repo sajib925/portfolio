@@ -15,7 +15,7 @@ const StyledParagraph = styled.p`
     font-size: 16px;
     line-height: 26px;
   }
-  ${media.up("md")} {
+  ${media.up("lg")} {
     font-size: 18px;
     line-height: 30px;
   }

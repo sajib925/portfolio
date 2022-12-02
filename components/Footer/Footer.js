@@ -7,7 +7,7 @@ import Button from './../Button/Button';
 
 function Footer() {
   return (
-    <StyledFooter id='footer'>
+    <StyledFooter id="footer">
       <Container>
         {/* footer top start here  */}
 

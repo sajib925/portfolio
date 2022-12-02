@@ -3,40 +3,31 @@ import media from "../../styles/Responsive";
 import THEME from './../../styles/Theme';
 
 const StyledHeader = styled.header`
-  padding-top: 28px;
-  background: transparent;
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  ${media.up("md")} {
-    padding-top: 32px;
-  }
-
+  padding: 28px 0;
+  background: #a67cfe;
   ${media.up("lg")} {
-    padding-top: 43px;
+    padding: 43px 0;
   }
 
-  .logo {
-    justify-self: flex-start;
-    align-self: center;
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .menu {
-    justify-self: flex-end;
-    align-self: center;
     display: flex;
     align-items: center;
-    justify-content: center;
-
+    column-gap: 42px;
     &__item {
       display: none;
-
-      ${media.up("lg")} {
+      ${media.up("sm")} {
         display: block;
       }
-
       &__link {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
         font-family: ${THEME.fonts.bodyFont};
         font-style: normal;
         font-weight: ${THEME.weight.weightNormal};
@@ -45,14 +36,12 @@ const StyledHeader = styled.header`
         color: ${THEME.colors.textPrimary};
       }
     }
-
-    &__item__mobile {
-        
-      ${media.up("lg")} {
+    &__mobile__item {
+      ${media.up("sm")} {
         display: none;
       }
     }
   }
 `;
 
-export default StyledHeader
+export default StyledHeader;

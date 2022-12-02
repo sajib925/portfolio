@@ -4,19 +4,19 @@ import THEME from "./../../styles/Theme";
 
 const StyledHeroSection = styled.section`
   position: relative;
-  padding: 90px 0 175px;
+  padding: 10px 0 175px;
   background-color: ${THEME.colors.bgPrimary};
 
   ${media.up("sm")} {
-    padding: 100px 0 175px;
+    padding: 15px 0 175px;
   }
 
   ${media.up("md")} {
-    padding: 120px 0 175px;
+    padding: 20px 0 175px;
   }
 
   ${media.up("lg")} {
-    padding: 170px 0 80px;
+    padding: 47px 0 80px;
   }
 
   .left {
@@ -85,21 +85,23 @@ const StyledHeroSection = styled.section`
       ${media.up("lg")} {
         margin-bottom: 0;
         width: 100%;
+        margin-left: 0;
+        margin-right: 0;
       }
     }
     &__icon {
       ${media.up("lg")} {
         position: absolute;
         top: 11%;
-        right: -9%;
+        right: 0%;
       }
+      
     }
   }
 
   .bottom__bg {
     max-width: 1440px;
     width: 100%;
-    /* object-fit: cover; */
     margin: 0 auto;
     position: absolute;
     left: 0;
