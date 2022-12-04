@@ -43,7 +43,7 @@ const StyledOutlineBtn = styled.a`
   }
 `;
 
-function Button({variant,className, text, path}) {
+const Button = ({variant,className, text, path}) => {
   return (
     <>
       {variant === "outline" ? (

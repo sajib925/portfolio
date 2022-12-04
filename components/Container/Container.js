@@ -22,7 +22,7 @@ const StyledContainer = styled.div`
   }
 `;
 
-function Container({children}) {
+const Container = ({children}) => {
   return <StyledContainer>{children}</StyledContainer>;
 }
 

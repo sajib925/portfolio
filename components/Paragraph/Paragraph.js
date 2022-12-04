@@ -21,7 +21,7 @@ const StyledParagraph = styled.p`
   }
 `;
 
-function Paragraph({children,className}) {
+const Paragraph = ({children,className}) => {
   return <StyledParagraph className={className}>{children}</StyledParagraph>;
 }
 

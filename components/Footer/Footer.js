@@ -5,7 +5,7 @@ import  Title  from './../Title/Title';
 import Paragraph from './../Paragraph/Paragraph';
 import Button from './../Button/Button';
 
-function Footer() {
+const Footer = () => {
   return (
     <StyledFooter id="footer">
       <Container>

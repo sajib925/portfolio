@@ -11,12 +11,6 @@ export const Title = (props) => {
         <h2 className={className}>{children}</h2>
       ) : tagName === "h3" ? (
         <h3 className={className}>{children}</h3>
-      ) : tagName === "h4" ? (
-        <h4 className={className}>{children}</h4>
-      ) : tagName === "h5" ? (
-        <h5 className={className}>{children}</h5>
-      ) : tagName === "h6" ? (
-        <h6 className={className}>{children}</h6>
       ) : (
         ""
       )}
@@ -24,4 +18,4 @@ export const Title = (props) => {
   );
 };
 
-export default Title
+export default Title;
