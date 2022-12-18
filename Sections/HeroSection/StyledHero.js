@@ -90,6 +90,7 @@ const StyledHeroSection = styled.section`
       }
     }
     &__icon {
+      display: none;
       ${media.up("lg")} {
         position: absolute;
         top: 11%;

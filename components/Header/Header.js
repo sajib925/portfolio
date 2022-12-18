@@ -20,29 +20,29 @@ const Header = () => {
           </div>
           <ul className="menu">
             <li className="menu__item">
-              <a href="/" className="menu__item__link">
+              <Link href="/" className="menu__item__link">
                 <Image
                   src={arrowIcon}
                   alt="arrow icon"
                   className="menu__item__link__icon"
                 />
                 <span className="menu__item__link__text">START A PROJECT</span>
-              </a>
+              </Link>
             </li>
             <li className="menu__item">
-              <a href="/" className="menu__item__link">
+              <Link href="/" className="menu__item__link">
                 <Image
                   src={desktopIcon}
                   alt="desktop icon"
                   className="menu__item__link__icon"
                 />
                 <span className="menu__item__link__text">MENU</span>
-              </a>
+              </Link>
             </li>
             <li className="menu__mobile__item">
-              <a href="/" className="menu__mobile__item__link">
+              <Link href="/" className="menu__mobile__item__link">
                 <Image src={mobileIcon} alt="mobile icon" />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

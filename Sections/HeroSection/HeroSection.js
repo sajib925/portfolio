@@ -29,12 +29,14 @@ const HeroSection = () => {
               <Button text="Let’s Talk" />
             </div>
             <div className="left__icon">
-              <ArrowSvg />
+              <Link href="#footer">
+                <ArrowSvg />
+              </Link>
             </div>
           </div>
           <div className="right">
             <Image className="right__img" src={img1} alt="man img" />
-            <Link href="#footer" className="right__icon">
+            <Link href="/" className="right__icon">
               <Image src={img2} alt="video icon" />
             </Link>
           </div>

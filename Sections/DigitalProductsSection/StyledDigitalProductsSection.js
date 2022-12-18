@@ -3,6 +3,7 @@ import media from "../../styles/Responsive";
 import THEME from "./../../styles/Theme";
 
 const StyledDigitalProductsSection = styled.section`
+display: none;
   padding: 50px 0;
 
   ${media.up("md")} {

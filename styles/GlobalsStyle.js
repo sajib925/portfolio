@@ -1,5 +1,4 @@
 import {createGlobalStyle} from "styled-components";
-import THEME from "./Theme";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -7,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     
 *, *::before, *::after {
   box-sizing: border-box;
+  
 }
 
 * {
@@ -15,12 +15,12 @@ export const GlobalStyle = createGlobalStyle`
 
 html, body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  /* font-family: ${THEME.fonts.bodyFont}; */
 }
 
 img, picture, video, canvas, svg {
@@ -49,4 +49,4 @@ a{
 }
 `;
 
-export default GlobalStyle
+export default GlobalStyle;

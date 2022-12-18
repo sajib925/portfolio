@@ -2,6 +2,7 @@ import styled from "styled-components";
 import media from "./../../styles/Responsive";
 
 const StyledClientsSection = styled.section`
+display: none;
   padding: 50px 0 100px;
 
   ${media.up("sm")} {
